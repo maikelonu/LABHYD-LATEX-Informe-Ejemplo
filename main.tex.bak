@@ -1,0 +1,267 @@
+\documentclass[11pt, letterpaper]{article} %It is use to specify the format of the sheet and the letter size
+
+%Packages are loaded
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=3cm]{geometry} %This is used to set margins
+
+\usepackage[utf8]{inputenc} %Translate various standard and other input encodings into a LaTeX internal language.
+
+\usepackage{amsmath, amsfonts, amssymb} %Allows the user to use different mathematical symbols.
+
+\usepackage{makeidx} %This package is used to enumerate the equations.
+
+\usepackage[spanish]{babel} %Allows to select the language of the document.
+
+\usepackage{setspace} %To set the spacing.
+
+\usepackage{float} %Improves the interface for defining floating objects such as figures and tables.
+
+\usepackage{graphicx} %This package is necessary to work with images, headers, footers, etc.
+
+%This package are necessary to work with bibliography.
+\usepackage[backend=biber,style=authoryear,citestyle=apa]{biblatex}
+
+\addbibresource{reference.bib} %The references file is loaded
+
+\usepackage[nottoc]{tocbibind} %Allows to add the references section into the index.
+
+\onehalfspacing %Spacing
+
+%Optional title
+%\title{Ejemplo Informe}
+%\author{Maikel Méndez}
+%\date{Enero 2018}
+%\maketitle
+
+\begin{document}
+
+%The title pageis created manually. 
+\begin{titlepage}
+
+%Adds the TEC's logo.
+\begin{center}%This is used to center the text.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\columnwidth]{LOGO_TEC.png}
+\end{figure}
+	\textbf{\large{ESCUELA DE INGENIERÍA EN CONSTRUCCIÓN}}\\ %This command makes the letter bigger and bold.
+	\textbf{\large{LABORATORIO DE HIDRÁULICA}}\\
+	\textbf{\large{Grupo}} \# \\
+\vspace{1in} %This command sets a space between lines.
+\textbf{\large{INFORME \#. TÍTULO}}\\
+\vspace{1in}
+\textbf{\large{Elaborado por:}}\\
+\textbf{\large{NOMBRE DEL ESTUDIANTE}}\\
+\vspace{0.5in}
+\textbf{\large{Profesor guía:}}\\
+\textbf{\large{MAIKEL MÉNDEZ MORALES}}\\
+\vspace{0.5in}
+\textbf{\large{Fecha de entrega:}}\\
+\textbf{\large{FECHA}}\\
+\vspace{1in}
+\textbf{\large{II Semestre 2017}}\\
+
+\end{center}
+
+\end{titlepage}
+
+\tableofcontents
+
+\pagebreak
+
+\section{Resumen} %This command is used to establish and name each section.
+El presente informe resume las actividades realizadas alrededor de un experimento orientado a analizar la distribución de velocidades en flujo libre. El \textbf{objetivo principal} [\emph{OJO}] del experimento \textbf{fue} [\emph{Tiempo pasado. La ejecución fue en tiempo PASADO, los resultados y su análisis son en tiempo presente}] analizar el perfil de velocidades que se presenta en un canal hidráulico experimental (\textbf{CHI}) [\emph{Primero se cita el pronombre y luego la abreviación}]; al tiempo que se estimaron los coeficientes de corrección de energía ($\alpha$) y momentum ($\beta$) para el CHI en cuestión.\\
+El CHI utilizado \textbf{es} [\emph{Tiempo presente, el canal aún existe}]de sección lisa (acero inoxidable y cristal). Las mediciones de velocidad se realizaron \textbf{mediante} [\emph{Se dan nociones del procedimeinto sin caer en detalles cuantitativos}] un tubo Pitot conectado a un piezómetro diferencial digital. El caudal volumétrico fue medido mediante un rotámetro análogo mientras que los tirantes fueron medidos mediante un vernier de tipo análogo.\\
+Los resultados \textbf{sugieren} [\emph{Tiempo presente}] que los coeficientes de corrección de energía y momentum son despreciables, dado que ambos se aproximan a la unidad (\textbf{$\alpha = 1.070 \pm 0.030$ y $\beta = 1.050 \pm 0.025$}) [\emph{Se incluyen los resultados más relevantes con sus respectivas incertidumbres}]. Lo anterior es consistente con las referencias \textbf{consultadas y propone que en flujo libre} [\emph{Se concluye con base en un análisis soportado por referencias}, la carga de energía dinámica en una sección lisa, no se ve significativamente afectada por una distribución de velocidades no uniforme.\\
+
+La instrumentación utilizada se considera confiable dadas las bajas incertidumbres obtenidas. Se recomienda aumentar la \textbf{población de muestreo} [\emph{Se estipulan las recomendaciones más relevantes}] con el fin de dar mayor validez estadística a los resultados experimentales.\\
+
+\textbf{NOTAS DEL PROFESOR:}
+
+%This command is use to make a list. Each item of the list has to start with the command "\item".
+\begin{itemize}
+
+\item Se utilizaron 193 palabras y CUALQUIER lector podría entender el informe con tan solo leer el RESUMEN.
+\item Entre más concisos sean ustedes, más rápido terminan el informe, mayor es su calidad y mejor es para el lector.
+\item Se dividen las ideas por párrafo, al menos 3.
+\item Se utiliza TAB al inicio de cada párrafo.
+
+\end{itemize}
+\pagebreak
+
+\section{Metodología}
+En la presente metodología, se desarrolla la secuencia de cálculo analítica ligada al presente experimento (\emph{Determinación de la distribución de velocidad en flujo libre}) [\emph{Aunque me estoy manteniendo con el experimento citado en el resumen, no necesariamente será así durante el resto del desarrollo de este EJEMPLO de informe}] en el orden y secuencia sugerida por el procedimiento y las referencias consultadas.\\
+
+\subsection{Equipo utilizado}
+
+\begin{itemize}
+
+\item Canal hidráulico experimental, marca: XX, modelo: XX, longitud: XX m, sección: XX m.
+\item Rotámetro análogo, marca: XX, modelo: XX, unidad de medición: GPM, incertidumbre: $\pm$ XX GPM.
+\item Vernier análogo, marca: XX, modelo: XX, unidad de medición: mm, incertidumbre: $\pm$ mm.
+\item Tubo Pitot, marca: XX, modelo: XX, unidad de medición: mm, incertidumbre: $\pm$ mm
+\item Manómetro Digital, marca: XX, modelo: XX, unidad de medición: mm, incertidumbre: $\pm$ mm
+
+\end{itemize}
+
+\subsection{Conversión de unidades}
+[\emph{Todas aquellas equivalencias entre unidades diferentes al SI deben ser estipuladas. e.g, conversión de GPM a ${m}^{3}$/s}]
+
+\subsection{Memoria de cálculo}
+[\emph{NO APLICA en el caso de que R haga todos los cálculos}]\\
+Con base en la ecuación 30.5, se calcula el coeficiente de corrección de momentum ($\beta$):
+
+\begin{equation}
+\label{eq:momentum}
+\alpha =\frac{ \Sigma {v}^{2} \Delta y} {{V}^{2} h} 
+\end{equation}
+
+(ACA SE TOMA UN VALOR NUMERICO Y SE DESARROLLA POR \textbf{COMPLETO} [\emph{OJO}])\\
+
+Con base en la Ecuación \textbf{30.6} [\emph{Esto viene del procedimiento}], se calcula el coeficiente de corrección de energía ($\alpha$):
+
+\begin{equation}
+\label{eq:CEnergia}
+\alpha =\frac{ \Sigma {v}^{3} \Delta y} {{V}^{3} h} 
+\end{equation}
+
+(ACÁ SE TOMA UN VALOR NUMÉRICO Y SE DESARROLLA POR \textbf{COMPLETO}) [\emph{OJO})\\
+
+\subsection{Descripción y análisis estádistico}
+Para el análisis numérico, estadístico y gráfico de los datos observados se utilizó el lenguaje de programación (\textbf{\cite{RStudio}}). Las bibliotecas R utilizadas fueron: Agreement, DescTools, ggplot2, MASS, pastecs y \textbf{reshape}. [\emph{Siempre se deben mencionar las librerías extra de R, aquellas no incluidas en el CORE de R}]\\
+Dentro de las funciones utilizadas destacan:
+
+\begin{itemize}
+
+\item Desc {\textbf{DescTools}} [\emph{Acá hay que ampararse en la descripción de los archivos de ayuda de R Studio... SUPER FÁCIL}]: estadísticas descriptivas con salidas gráficas y numéricas.
+\item t.test {stats}: Student's t-Test. Aplica una prueba de t-Test para determinar diferencias estadísticamente significativas entre las medias de dos muestras independientes. 
+\item shapiro.test {stats}: aplica el test de Shapiro-Wilk para determinar si una variable aleatoria es Normalmente distribuida.
+\item cor.test {stats}: aplica el test de correlación de Pearson's entre dos vectores asociados.
+\item agreement {Agreement}: computa diversas pruebas de concordancia y calidad, dentro de ellas: concordance correlation coefficient (CCC), precision, accuracy, total deviation index (TDI), coverage probability (CP) and relative biased square (RBS).
+\item ggplot {ggplot2}: crea objetos gráficos tipo listas basados en “the grammar of graphics”.
+\item melt {reshape}: permite la tranformación de datos de wide-format a long-format.
+
+\end{itemize}
+
+\pagebreak
+
+\section{Resultados}
+[\emph{Los resultados van a venir de R el 90\% del tiempo, los cuadro se generan y pegan en el documento}]
+A continuación se presentan los resultados del experimento “Medidor Venturi”.\\ 
+Durante la ejecución del experimento, pudo \textbf{observarse} [\emph{Muy importante las particularidades durante la ejecución del experimento}] que para caudales mayores a 8 GPM, el balastro del rotámetro oscilaba en un rango cercano a los $\pm$ 0.25 GPM, lo cual resta confianza a las observaciones experimentales más allá de dicho valor. Lo mismo aplica a la estabilidad de las lecturas en el tubo Pitot y del manómetro digital.\\
+Igualmente, pudo apreciarse una fuga de flujo sobre una de las juntas en la tubería de PVC que sostiene al medidor Venturi. Según el \textbf{Profesor} [\emph{Me pueden echar la culpa a mi :)}], dicha fuga es insignificante y no fue tomada en cuenta.\\ 
+Finalmente, el Profesor hizo notar que los puertos de medición de presión estática no interfieren en el campo de flujo, por lo que intervención sobre la componente dinámica de energía debería ser mínima.\\
+
+
+%To insert a table, you have to export it from R Studio and then paste it (CAMBIAR TABLA)
+
+\begin{table}[ht]
+\centering
+\scriptsize
+\textbf{Cuadro 1.0}. Determinación de los coeficientes de descarga “C” experimentales del Medidor Venturi.
+[\emph{Título autoexplicativo. 3 cifras significativas. Se deben estipular las ecuaciones que correspondes a los cálculos sugeridos en el procedimiento.}]
+\scriptsize
+\begin{tabular}{|p{1cm}p{1.3cm}|p{0.30cm}p{0.30cm}p{0.30cm}p{0.50cm}|p{0.30cm}p{0.30cm}p{0.30cm}p{0.50cm}|p{1.8cm}|p{1.5cm}|p{0.20cm}p{0.83cm}p{0.83cm}|}
+  \hline
+    Secuencia & Flujo Volumétrico "Q" & \multicolumn{4}{p{3cm}|}{Lecturas de Presión Aguas Arriba (m)} & \multicolumn{4}{p{3cm}|}{Lecturas de Presión Aguas Abajo (m)} & Gradiente de Presión & Número de Reynolds $"Re"$ & \multicolumn{3}{|p{3.5cm}|}{Coeficiente $"C"$}\\
+    &  & L1 & L2 & L3 & Media & L1 & L2 & L3 & Media & (m)(Ec 12.1) & & \multicolumn{3}{|p{2.5cm}|}{(Ec 12.4)} \\ 
+    \hline
+        1 & Q1 & L1 & L2 & L3 & & L1 & L2 & L3 & & G1 & Re1 & C1 & $Media(\mu)$ & $Desv.STD(\sigma)$\\
+        2 & Q2 & L1 & L2 & L3 &  & L1 & L2 & L3 && G2 & Re2 & C2 & &\\
+        3 & Q3 & L1 & L2 & L3 & & L1 & L2 & L3 & & G3 & Re3 & C3 & &\\
+        4 & Q4 & L1 & L2 & L3 & & L1 & L2 & L3 & & G4 & Re4 & C4 & &\\
+        5 & Q5 & L1 & L2 & L3 & & L1 & L2 & L3 & & G5 & Re5 & C5 & &\\
+        6 & Q6 & L1 & L2 & L3 & & L1 & L2 & L3 & & G6 & Re6 & C6 & &\\
+        7 & Q7 & L1 & L2 & L3 & & L1 & L2 & L3 & & G7 & Re7 & C7 & &\\
+        8 & Q8 & L1 & L2 & L3 & & L1 & L2 & L3 & & G8 & Re8 & C8 & &\\
+        9 & Q9 & L1 & L2 & L3 & & L1 & L2 & L3 & & G9 & Re9 & C9 & &\\
+        10 & Q10 & L1 & L2 & L3 & UNICO & L1 & L2 & L3 & UNICO & G10 & Re10 & C10 & UNICO &UNICO\\
+   \hline
+\end{tabular}\\
+\small{Fuente: Los autores.}
+\end{table}'
+
+
+
+\begin{table}[ht]
+\centering
+\textbf{Cuadro 2.0} Descripción estadística [\emph{Indispensable!}]. de los coeficientes de descarga “C” experimentales del Medidor Venturi.\\
+\begin{tabular}{|l|l|}
+    \hline
+    Distribución & Normal\\
+    \hline
+        Tamaño de la muestra & 10\\
+        Estadística & 0.169\\ 
+        P-Value & 0.892\\ 
+        Nivel de Significancia & 0.05\\ 
+        Prueba & Chi-Cuadrado\\
+        Valor Crítico & 0.40    9\\
+        Se rechaza la hipóte    sis nula & No\\
+    \hline
+    \end{tabular}\\
+    Fuente: Los autores.
+\end{table}
+
+\begin{table}
+\textbf{Cuadro 3.0}   Desviaciones [\emph{ Viene de la comparación entre el Valor Esperado obtenido de Mínimos Cuadrados o en este caso; de la Curva Teórica, versus los valores experimentales Observados. Estadística Descriptiva!! }] y \% de Error entre los coeficientes “C” experimentales y teóricos del Medidor Venturi.\\
+\centering
+\begin{tabular}{|l|l|l|l|}
+    \hline
+    \multicolumn{4}{|c|}{Coeficientes de Descarga}\\
+    \hline
+        Experimental & Teórico & Desviación & \% Error \\
+    \hline
+        CE1 & CT1 & DV1 & \\
+        CE2 & CT2 & DV2 & \\
+        CE3 & CT3 & DV3 & \\
+        CE4 & CT4 & DV4 & \\
+        CE5 & CT5 & DV5 & \\
+        CE6 & CT6 & DV6 & \\
+        CE7 & CT7 & DV7 & \\
+        CE8 & CT8 & DV8 & \\
+        CE9 & CT9 & DV9 & \\
+        CE10 & CT10 & DV10 & UNICO \\
+    \hline
+    \end{tabular}\\
+    Fuente: Los autores.
+\end{table}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\columnwidth]{CD.png}
+	\caption{Comportamiento de los coeficientes “C” experimentales y teóricos del Medidor Venturi.}   
+\end{figure}
+\begin{center} 
+Fuente: Autor1, 20XX.
+\end{center}
+\pagebreak
+
+\section{Análisis estadístico}
+El Cuadro 1.0 muestra que los valores experimentales de flujo fueron todos medidos en un rango del número de Reynolds mayor a ${10}^{5}$. Esto también es evidenciado por la Figura 1.0. Consecuentemente, no se pudo validar la sección del nomograma que corresponde a valores de Re menores a ${10}^{4}$. El Cuadro 2.0 demuestra que el valor promedio del coeficiente de descarga “C” experimental es normalmente distribuido y que por lo tanto, la desviación estándar representa la incertidumbre total del experimento (AUTOR1, 20XX).\\ 
+Dado que el Coeficiente de Variación (CV) está por debajo del 10\%, el promedio se considera uniforme, homogéneo y representativo del fenómeno que se está analizando (AUTOR2, 19XX). Con base en el nomograma de la Figura 1.0, este comportamiento es de esperarse, ya que con valores de Re superiores a ${10}^{5}$, el coeficiente “C” tiende a ser independiente en su comportamiento (AUTOR3, 19XX).  Tómese en cuenta que para efectos de este experimento la única tendencia teórica a considerarse, es aquella que corresponde a 750 mm X 375 mm.\\ 
+Al analizar las observaciones experimentales de la Figura 1.0, puede verse que los puntos secuenciales 7 y 8, los cuales corresponde a valores de caudal por encima de 8 GPM tienden a presentar mayores desviaciones que aquellas producidas por los demás pares ordenados que también se reflejan en los gradientes de presión de los mismos puntos. Lo anterior es respaldado por el Cuadro 3.0.\\ 
+Si este comportamiento se ve reflejado tanto en el rotámetro como el manómetro y consecuentemente en el tubo Pitot, quiere decir que la fuente del error es sistemática y que proviene de una fuente que afectó todos los otros equipos. Si ese es el caso, la fluctuación debió venir del sistema de bombeo de la Pared Hidráulica. Es probable que este “transitorio” se haya debido a causas fortuitas, más allá de la operación normal de las bombas. Entre ellas destacan, variaciones de corriente eléctrica, cargas de succión y descarga.\\ 
+Queda claro entonces, que no se puede hablar únicamente de errores aleatorios sino que también hay que tomar en cuenta errores sistemáticos; ligados en este caso a los equipos de medición y alimentación de flujo propiamente. Ambos puntos secuenciales, 7 y 8 podrían ser eliminados del análisis; pero esto requeriría de una población de muestreo mayor.
+\pagebreak
+
+\section{Conclusiones}
+El coeficiente “C” experimental promedio para el Medidor Venturi es de XX.XXX $\pm$ XX y es válido únicamente para un flujo enteramente turbulento y para un orificio de 750 mm X 375 mm. Este promedio se considera homogéneo y representativo.
+
+\section{Recomendaciones}
+
+%This command allows the user to enumerate a list.
+\begin{enumerate}
+\item Abarcar un espectro mayor de flujo volumétrico con el fin de validar valores del número de Reynolds cercanos al rango laminar.
+\item Aumentar la población de muestreo con el propósito de mejorar la validez estadística del análisis.
+\item Repetir las secuencias 7 y 8 con el fin de evaluar cualquier error sistemático que pudiera haber influido en su medición.
+\item Evaluar el estado general del equipo de bombeo y la calibración de los equipos de medición.
+\end{enumerate}
+
+\pagebreak
+
+\printbibliography
+
+\end{document}
+
+
