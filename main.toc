@@ -1,10 +1,9 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
 \defcounter {refsection}{0}\relax 
-\select@language {spanish}
+\contentsline {section}{\numberline {1}RESUMEN}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Resumen}{2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Metodolog\IeC {\'\i }a}{3}
+\contentsline {section}{\numberline {2}METODOLOG\IeC {\'I}A}{3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Equipo utilizado}{3}
 \defcounter {refsection}{0}\relax 
@@ -12,12 +11,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Memoria de c\IeC {\'a}lculo}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Descripci\IeC {\'o}n y an\IeC {\'a}lisis est\IeC {\'a}distico}{4}
+\contentsline {section}{\numberline {3}DESCRIPCI\IeC {\'O}N Y AN\IeC {\'A}LISIS EST\IeC {\'A}DISTICO}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Resultados}{5}
+\contentsline {section}{\numberline {4}RESULTADOS}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}An\IeC {\'a}lisis estad\IeC {\'\i }stico}{7}
+\contentsline {section}{\numberline {5}AN\IeC {\'A}LISIS DE LOS RESULTADOS}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusiones}{8}
+\contentsline {section}{\numberline {6}CONCLUSIONES}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Recomendaciones}{8}
+\contentsline {section}{\numberline {7}RECOMENDACIONES}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}REFERENCIAS BIBLIOGR\IeC {\'A}FICAS}{9}
