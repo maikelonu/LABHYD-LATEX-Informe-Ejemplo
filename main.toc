@@ -1,24 +1,12 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {spanish}{}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}RESUMEN}{2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}METODOLOG\IeC {\'I}A}{3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Equipo utilizado}{3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Conversi\IeC {\'o}n de unidades}{3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Memoria de c\IeC {\'a}lculo}{3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}DESCRIPCI\IeC {\'O}N Y AN\IeC {\'A}LISIS EST\IeC {\'A}DISTICO}{4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}RESULTADOS}{5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}AN\IeC {\'A}LISIS DE LOS RESULTADOS}{7}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}CONCLUSIONES}{8}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}RECOMENDACIONES}{8}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}REFERENCIAS BIBLIOGR\IeC {\'A}FICAS}{9}
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}RESUMEN}{2}{}%
+\contentsline {section}{\numberline {2}METODOLOGÍA}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Equipo utilizado}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Conversión de unidades}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Memoria de cálculo}{3}{}%
+\contentsline {section}{\numberline {3}DESCRIPCIÓN Y ANÁLISIS ESTÁDISTICO}{4}{}%
+\contentsline {section}{\numberline {4}RESULTADOS}{5}{}%
+\contentsline {section}{\numberline {5}ANÁLISIS DE LOS RESULTADOS}{7}{}%
+\contentsline {section}{\numberline {6}CONCLUSIONES}{8}{}%
+\contentsline {section}{\numberline {7}RECOMENDACIONES}{8}{}%
+\contentsline {section}{\numberline {8}REFERENCIAS BIBLIOGRÁFICAS}{9}{}%

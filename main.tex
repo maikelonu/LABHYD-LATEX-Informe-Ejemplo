@@ -63,6 +63,13 @@
 % Allows adding references within the index
 \usepackage[nottoc]{tocbibind} 
 
+% Allows for image landscape portrait
+\usepackage{pdflscape}
+
+% BEWARE!! Use these lines ONLY if you get a first blank page
+%\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+%\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
 %/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 % BLOCK: LATEX document writing
 %/////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -90,7 +97,8 @@
 \textbf{\large{INFORME \#. TÍTULO}}\\
 \vspace{1in} %This command sets a space between lines
 \textbf{\large{Elaborado por:}}\\
-\textbf{\large{NOMBRE DEL ESTUDIANTE}}\\
+\textbf{\large{NOMBRE DEL ESTUDIANTE:}}\\
+\textbf{\large{LUIS LOPEZ LOPEZ}}\\
 \vspace{0.5in} %This command sets a space between lines
 \textbf{\large{Profesor guía:}}\\
 \textbf{\large{MAIKEL MÉNDEZ MORALES}}\\
